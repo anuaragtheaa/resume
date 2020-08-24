@@ -79,8 +79,8 @@ button:focus {
   padding-right: 0px; }
 
 .p_120 {
-  padding-top: 120px;
-  padding-bottom: 120px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .p_100 {
   padding-top: 100px;
@@ -298,6 +298,17 @@ button:focus {
 /*----------------------------------------------------*/
 /* Home Banner Area css
 ============================================================================================ */
+.home {
+  padding-top: 100px; 
+  padding-bottom: 20px;
+  background-image: url('../img/background4.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.home .card {
+  padding: 30px; 
+  background-image: url('../img/background4.jpg');
+}
 .home_banner_area {
   position: relative;
   z-index: 1;
@@ -306,7 +317,7 @@ button:focus {
   background-image: -ms-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
   margin-bottom: 200px; }
   .home_banner_area .box_1620 {
-    min-height: 700px;
+    min-height: 500px;
     border-radius: 12px;
     position: relative;
     bottom: -200px;
@@ -316,7 +327,7 @@ button:focus {
   .home_banner_area .banner_inner {
     position: relative;
     width: 100%;
-    min-height: 700px;
+    min-height: 500px;
     display: flex; }
     .home_banner_area .banner_inner .banner_content {
       color: #222222;
@@ -3004,3 +3015,38 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+/* Grid image gallery */
+.rowImg {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnImg {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columnImg img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+  /* @media screen and (max-width: 800px) {
+    .columnImg {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }  */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnImg {
+    flex: 50%;
+    max-width: 50%;
+  }
+} 
