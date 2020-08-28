@@ -60,7 +60,7 @@
 
 	<!--================Home Banner Area =================-->
 	<div id="fullpage">
-	<section class="home section p_120" id="home">
+	<section class="home section " id="home">
 		<div class="container">
 			<div class="card">
 				<div class="d-flex align-align-center justify-content-center">
@@ -122,7 +122,7 @@
 	<!--================End Home Banner Area =================-->
 
 	<!--================My Tabs Area =================-->
-	<section class="p_120 section" style="background-image: url('img/background2.jpg'); background-repeat: no-repeat"
+	<section class=" section " style="background-image: url('img/background2.jpg'); background-repeat: no-repeat"
 		id="certi">
 		<div class="container">
 			<div class="d-flex justify-content-center">
@@ -208,7 +208,7 @@
 		</div>
 	</section>
 
-	<section class=" p_120 section fp-scrollable" style="background-image: url('img/background1.jpg');background-repeat: no-repeat"
+	<section class=" section  " style="background-image: url('img/background1.jpg');background-repeat: no-repeat"
 		id="project">
 		<div class="container">
 			<div class="d-flex justify-content-center">
@@ -257,7 +257,7 @@
 
 
 	<!--================Footer Area =================-->
-	<footer class="footer_area p_120 section" id="contact">
+	<footer class="footer_area  section fp-auto-height" id="contact">
 		<div class="container-fluid">
 			<div class="d-flex justify-content-center">
 				<div class="row">
@@ -344,9 +344,9 @@
 				},
 				image: {
 					tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-					titleSrc: function (item) {
+					/* titleSrc: function (item) {
 						return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-					}
+					} */
 				}
 			});
 		});
@@ -411,11 +411,10 @@
 	$('#fullpage').fullpage({
 		//options here
 		autoScrolling:true,
+		verticalCentered: true,
 		scrollHorizontally: true,
 		navigation: true,
-		scrollOverflow: true,
-		navigationTooltips: ['Home', 'Certification', 'Projects', 'Contact'],
-		showActiveTooltip: true
+		scrollOverflow: true
 	});
 
 	//methods

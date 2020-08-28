@@ -79,7 +79,7 @@ button:focus {
   padding-right: 0px; }
 
 .p_120 {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 20px; }
 
 .p_100 {
@@ -94,6 +94,14 @@ button:focus {
 
 .mt-25 {
   margin-top: 25px; }
+
+@media (min-width: 500px) {
+  .p_120 {
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
 
 @media (min-width: 1200px) {
   .container {
@@ -299,8 +307,8 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .home {
-  padding-top: 100px; 
-  padding-bottom: 20px;
+  /* padding-top: 100px; 
+  padding-bottom: 20px; */
   background-image: url('../img/background4.jpg');
   background-repeat: no-repeat;
   background-size: auto;
@@ -3050,3 +3058,7 @@ h6 {
     max-width: 50%;
   }
 } 
+
+.fp-scrollable {
+  height: 600px !important;
+}
